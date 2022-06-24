@@ -1,0 +1,20 @@
+<RCC>
+    <qresource prefix="/rec">
+        <file>menu_icon/icons8-about-100.png</file>
+        <file>menu_icon/icons8-copy-64.png</file>
+        <file>menu_icon/icons8-cut-48.png</file>
+        <file>menu_icon/icons8-new-64.png</file>
+        <file>menu_icon/icons8-opened-folder-48.png</file>
+        <file>menu_icon/icons8-paste-64.png</file>
+        <file>menu_icon/icons8-redo-64.png</file>
+        <file>menu_icon/icons8-save-64.png</file>
+        <file>menu_icon/icons8-save-as-48.png</file>
+        <file>menu_icon/icons8-undo-64.png</file>
+        <file>menu_icon/icons8-font-32.png</file>
+        <file>menu_icon/icons8-color-dropper-64.png</file>
+        <file>menu_icon/icons8-window-color-64.png</file>
+        <file>menu_icon/icons8-text-color-64.png</file>
+        <file>menu_icon/icons8-print-64.png</file>
+        <file>mainwindowIcon/icons8-notepad-85.png</file>
+    </qresource>
+</RCC>

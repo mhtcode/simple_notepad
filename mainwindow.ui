@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>790</width>
+    <height>598</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="minimumSize">
+    <size>
+     <width>30</width>
+     <height>30</height>
+    </size>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QTextEdit" name="textEdit">
+      <property name="font">
+       <font>
+        <family>SimSun</family>
+        <pointsize>18</pointsize>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Write something......&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="whatsThis">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;regerggfcfdgrg&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="markdown">
+       <string>It's just a test...
+
+</string>
+      </property>
+      <property name="html">
+       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'SimSun'; font-size:18pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;It's just a test...&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>790</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionNew"/>
+    <addaction name="actionOpen"/>
+    <addaction name="separator"/>
+    <addaction name="separator"/>
+    <addaction name="actionSaeve"/>
+    <addaction name="actionSave_as_2"/>
+    <addaction name="separator"/>
+    <addaction name="separator"/>
+    <addaction name="actionPrint"/>
+   </widget>
+   <widget class="QMenu" name="menuEdit">
+    <property name="title">
+     <string>Edit</string>
+    </property>
+    <addaction name="actionCut"/>
+    <addaction name="actionCopy"/>
+    <addaction name="actionPaste"/>
+    <addaction name="separator"/>
+    <addaction name="actionRedo"/>
+    <addaction name="actionUndo"/>
+   </widget>
+   <widget class="QMenu" name="menuAbout">
+    <property name="title">
+     <string>About</string>
+    </property>
+    <addaction name="actionAbout"/>
+   </widget>
+   <widget class="QMenu" name="menuView">
+    <property name="title">
+     <string>View</string>
+    </property>
+    <addaction name="actionFont"/>
+    <addaction name="actionColor"/>
+    <addaction name="actionBackground_color"/>
+    <addaction name="actionNotepad_bacckground_color"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuEdit"/>
+   <addaction name="menuView"/>
+   <addaction name="menuAbout"/>
+  </widget>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionNew"/>
+   <addaction name="actionOpen"/>
+   <addaction name="separator"/>
+   <addaction name="actionSaeve"/>
+   <addaction name="actionSave_as_2"/>
+   <addaction name="separator"/>
+   <addaction name="actionCut"/>
+   <addaction name="actionCopy"/>
+   <addaction name="actionPaste"/>
+   <addaction name="separator"/>
+   <addaction name="actionRedo"/>
+   <addaction name="actionUndo"/>
+   <addaction name="separator"/>
+   <addaction name="actionFont"/>
+   <addaction name="actionColor"/>
+   <addaction name="actionBackground_color"/>
+   <addaction name="actionNotepad_bacckground_color"/>
+   <addaction name="separator"/>
+   <addaction name="actionAbout"/>
+  </widget>
+  <action name="actionNew">
+   <property name="icon">
+    <iconset resource="menubarrec.qrc">
+     <normaloff>:/rec/menu_icon/icons8-new-64.png</normaloff>:/rec/menu_icon/icons8-new-64.png</iconset>
+   </property>
+   <property name="text">
+    <string>New</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+  <action name="actionOpen">
+   <property name="icon">
+    <iconset resource="menubarrec.qrc">
+     <normaloff>:/rec/menu_icon/icons8-opened-folder-48.png</normaloff>:/rec/menu_icon/icons8-opened-folder-48.png</iconset>
+   </property>
+   <property name="text">
+    <string>Open</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="actionSaeve">
+   <property name="icon">
+    <iconset resource="menubarrec.qrc">
+     <normaloff>:/rec/menu_icon/icons8-save-64.png</normaloff>:/rec/menu_icon/icons8-save-64.png</iconset>
+   </property>
+   <property name="text">
+    <string>Save</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="actionSave_as_2">
+   <property name="icon">
+    <iconset resource="menubarrec.qrc">
+     <normaloff>:/rec/menu_icon/icons8-save-as-48.png</normaloff>:/rec/menu_icon/icons8-save-as-48.png</iconset>
+   </property>
+   <property name="text">
+    <string>Save as</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+S</string>
+   </property>
+  </action>
+  <action name="actionCut">
+   <property name="icon">
+    <iconset resource="menubarrec.qrc">
+     <normaloff>:/rec/menu_icon/icons8-cut-48.png</normaloff>:/rec/menu_icon/icons8-cut-48.png</iconset>
+   </property>
+   <property name="text">
+    <string>Cut</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+X</string>
+   </property>
+  </action>
+  <action name="actionCopy">
+   <property name="icon">
+    <iconset resource="menubarrec.qrc">
+     <normaloff>:/rec/menu_icon/icons8-paste-64.png</normaloff>:/rec/menu_icon/icons8-paste-64.png</iconset>
+   </property>
+   <property name="text">
+    <string>Copy</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+C</string>
+   </property>
+  </action>
+  <action name="actionPaste">
+   <property name="icon">
+    <iconset resource="menubarrec.qrc">
+     <normaloff>:/rec/menu_icon/icons8-copy-64.png</normaloff>:/rec/menu_icon/icons8-copy-64.png</iconset>
+   </property>
+   <property name="text">
+    <string>Paste</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+V</string>
+   </property>
+  </action>
+  <action name="actionRedo">
+   <property name="icon">
+    <iconset resource="menubarrec.qrc">
+     <normaloff>:/rec/menu_icon/icons8-redo-64.png</normaloff>:/rec/menu_icon/icons8-redo-64.png</iconset>
+   </property>
+   <property name="text">
+    <string>Redo</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Y</string>
+   </property>
+  </action>
+  <action name="actionUndo">
+   <property name="icon">
+    <iconset resource="menubarrec.qrc">
+     <normaloff>:/rec/menu_icon/icons8-undo-64.png</normaloff>:/rec/menu_icon/icons8-undo-64.png</iconset>
+   </property>
+   <property name="text">
+    <string>Undo</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Z</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="icon">
+    <iconset resource="menubarrec.qrc">
+     <normaloff>:/rec/menu_icon/icons8-about-100.png</normaloff>:/rec/menu_icon/icons8-about-100.png</iconset>
+   </property>
+   <property name="text">
+    <string>About</string>
+   </property>
+  </action>
+  <action name="actionFont">
+   <property name="icon">
+    <iconset resource="menubarrec.qrc">
+     <normaloff>:/rec/menu_icon/icons8-font-32.png</normaloff>:/rec/menu_icon/icons8-font-32.png</iconset>
+   </property>
+   <property name="text">
+    <string>Font</string>
+   </property>
+  </action>
+  <action name="actionColor">
+   <property name="icon">
+    <iconset resource="menubarrec.qrc">
+     <normaloff>:/rec/menu_icon/icons8-color-dropper-64.png</normaloff>:/rec/menu_icon/icons8-color-dropper-64.png</iconset>
+   </property>
+   <property name="text">
+    <string>Color</string>
+   </property>
+  </action>
+  <action name="actionBackground_color">
+   <property name="icon">
+    <iconset resource="menubarrec.qrc">
+     <normaloff>:/rec/menu_icon/icons8-text-color-64.png</normaloff>:/rec/menu_icon/icons8-text-color-64.png</iconset>
+   </property>
+   <property name="text">
+    <string>Text background color</string>
+   </property>
+  </action>
+  <action name="actionNotepad_bacckground_color">
+   <property name="icon">
+    <iconset resource="menubarrec.qrc">
+     <normaloff>:/rec/menu_icon/icons8-window-color-64.png</normaloff>:/rec/menu_icon/icons8-window-color-64.png</iconset>
+   </property>
+   <property name="text">
+    <string>Notepad bacckground color</string>
+   </property>
+  </action>
+  <action name="actionPrint">
+   <property name="icon">
+    <iconset resource="menubarrec.qrc">
+     <normaloff>:/rec/menu_icon/icons8-print-64.png</normaloff>:/rec/menu_icon/icons8-print-64.png</iconset>
+   </property>
+   <property name="text">
+    <string>Print</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+P</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="menubarrec.qrc"/>
+ </resources>
+ <connections/>
+</ui>
